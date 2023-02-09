@@ -11,6 +11,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1 {
+  margin: 10px;
+}
+
 .book-create {
   position: fixed;
   bottom: 0;

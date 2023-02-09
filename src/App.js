@@ -63,10 +63,21 @@ function App() {
     };
 
 
-    const editBook = (id, title) => {
+    const editBook = async (id, newTitle) => {
+
+
+        const response = await axios.put(`http://localhost:3004/books/${id}`,
+            {
+                title: newTitle
+            });
+
+
+
+
+
         const updatedBooks = books.map((book) => {
             if (book.id === id) {
-                return { ...book, title };
+                return { ...book, ...response.data };
             }
             return book;
         });
@@ -76,6 +87,7 @@ function App() {
     return (
 
         <div>
+            <h1>Reading List</h1>
             <BookList
                 books={books}
                 onDelete={deleteBook}
