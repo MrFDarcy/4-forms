@@ -2,7 +2,7 @@ import BookShow from "./BookShow";
 
 
 
-function BookList({ books, onDelete }) {
+function BookList({ books, onDelete, onEdit }) {
 
     const renderedBooks = books.map((book) => {
         return (
@@ -10,6 +10,7 @@ function BookList({ books, onDelete }) {
                 key={book.id}
                 book={book}
                 onDelete={onDelete}
+                onEdit={onEdit}
             />
         );
     });
