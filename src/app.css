@@ -1,0 +1,86 @@
+/*
+book-create to display always at botton sticky
+Add a border and styling to the book-create component
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.book-create {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  border-top: 1px solid #ccc;
+  background-color: #ff6969;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.book-create input {
+  width: 100%;
+
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.book-create label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.book-create button {
+  width: 30%;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.book-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+book show items in form of cards
+*/
+
+.book-show {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+/*
+arrange nav elements of cards in a row
+*/
+
+.book-show-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 20%;
+}
