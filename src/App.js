@@ -57,7 +57,10 @@ function App() {
 
 
 
-    const deleteBook = (id) => {
+    const deleteBook = async (id) => {
+
+        await axios.delete(`http://localhost:3004/books/${id}`)
+
         const updatedBooks = books.filter((book) => book.id !== id);
         setBooks(updatedBooks);
     };
